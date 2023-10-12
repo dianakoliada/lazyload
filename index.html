@@ -8,26 +8,36 @@
 
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/animate.min.css">
+   <style>
+      img {
+         width: 270px;
+         height: 270px;
+         background-color: #ccc;
+      }
+   </style>
 </head>
 
 <body>
 
-   <h1>Lazy load</h1>
+   <h1 style="margin-bottom: 2000px;">Lazy load</h1>
 
-   <img src="img/gallery-1.jpg" alt="">
-   <img src="img/gallery-2.jpg" alt="">
-   <img src="img/gallery-3.jpg" alt="">
-   <img src="img/gallery-4.jpg" alt="">
-   <img src="img/gallery-5.jpg" alt="">
-   <img src="img/gallery-6.jpg" alt="">
+   <img data-src="img/gallery-1.jpg" alt="" class="lazy">
+   <img data-src="img/gallery-2.jpg" alt="" class="lazy">
+   <img data-src="img/gallery-3.jpg" alt="" class="lazy">
+   <img data-src="img/gallery-4.jpg" alt="" class="lazy">
+   <img data-src="img/gallery-5.jpg" alt="" class="lazy">
+   <img data-src="img/gallery-6.jpg" alt="" class="lazy">
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/_G5OuTmuU0Q?si=Xh90fqpCxNX2rXYF"
-      title="YouTube video player" frameborder="0"
+   <div style="margin-bottom: 1000px;"></div>
+
+   <iframe class="lazy" width="560" height="315"
+      data-src="https://www.youtube.com/embed/_G5OuTmuU0Q?si=Xh90fqpCxNX2rXYF" title="YouTube video player"
+      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
 
-   <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40666.994401579774!2d30.462265023922924!3d50.4283002604048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfca544f86eb%3A0x3bb96c6508937307!2z0JzRltGC0LXRgNGW0Y8!5e0!3m2!1suk!2sua!4v1697118925819!5m2!1suk!2sua"
+   <iframe class="lazy"
+      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40666.994401579774!2d30.462265023922924!3d50.4283002604048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfca544f86eb%3A0x3bb96c6508937307!2z0JzRltGC0LXRgNGW0Y8!5e0!3m2!1suk!2sua!4v1697118925819!5m2!1suk!2sua"
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
 
